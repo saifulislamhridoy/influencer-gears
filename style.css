@@ -56,12 +56,15 @@
      border-radius: 25px;
      cursor: pointer;
  }
- .button-icon{
+ .icon{
      margin-left: 5px;
  }
- .header-button:hover .button-icon{
-     transform: rotate(30deg);
+ .header-button:hover .icon{
+    
+    transform: rotate(360deg);
+    transition: transform 1s;
  }
+ 
  .header-right{
      margin-left: 50px;
      background-image: url(./images/Circle\ design.svg);
@@ -70,4 +73,7 @@
  }
  .header-right img{
      max-width: 100%;
+     position: relative;
+     top: 10px;
+     left: 10px;
  }
