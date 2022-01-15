@@ -163,6 +163,7 @@
     background-image: linear-gradient(90deg, #a81267, #FF008E);
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 /* footer part  */
 footer{
