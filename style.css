@@ -98,6 +98,7 @@
     box-shadow: 5px 5px 15px rgba(0,0,0,.9);
     border-radius: 5px;
  }
+ 
  .poroduct-details p{
      margin-top: -10px;
      font-size: 18px;
@@ -181,4 +182,14 @@ footer{
  font-size: 18px;
  padding-bottom: 5px;
  display: inline-block;
+}
+/* resposive part  */
+@media only screen and  (max-width:688px) {
+    .products, .header, .contact{
+        width: 100%;
+       max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }
