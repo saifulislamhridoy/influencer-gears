@@ -7,7 +7,7 @@
  }
  /* common class */
  .container{
-    width: 1200px;
+    width:1200px;
     padding:0 30px;
     margin: 0 auto;
 
@@ -33,12 +33,15 @@
  .header{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
+     height: 100vh;
+    
  }
  .header-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: -150px;
  }
  .header-left h1{
      font-size: 40px;
@@ -67,6 +70,7 @@
  
  .header-right{
      margin-left: 50px;
+     margin-top: 30px;
      background-image: url(./images/Circle\ design.svg);
      background-repeat: no-repeat;
      
@@ -77,3 +81,103 @@
      top: 10px;
      left: 10px;
  }
+ /* product part  */
+ .section-title{
+     text-align: center;
+     font-weight: 700;
+ }
+ .products{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 25px;
+ }
+ .product{
+     margin-top: 50px;
+     width: 300px;
+     padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.9);
+    border-radius: 5px;
+ }
+ .poroduct-details p{
+     margin-top: -10px;
+     font-size: 18px;
+ }
+ .poroduct-details .product-info{
+   
+     font-size: 12px;
+ }
+ .product-info .filled{
+   color: #FB8200;
+ }
+ .product-info .empty{
+     color: gray;
+ }
+ .product-info .text{
+     text-align: justify;
+    color: #787885;
+    margin-top: 5px;
+    font-size: 18px;
+ }
+ .section-button{
+     text-decoration: none;
+     color: #E02C6D;
+     float: right;
+     margin: 30px;
+ }
+/* contacr part  */
+.contact-section{
+    margin-top: 50px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-info{
+    line-height: 5;
+    margin-top: 70px;
+}
+.contact-info .contact-icon{
+    font-size: 25px;
+    color: #E02C6D;
+    margin-right: 10px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-filled{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #FF008E;
+}
+.submit-button{
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg, #a81267, #FF008E);
+    color: white;
+    border-radius: 5px;
+}
+/* footer part  */
+footer{
+    text-align: center;
+    background-color: #0A0826;
+    color: white;
+}
+.footer-info h3{
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.social-icon a{
+ color: white;
+ margin: 5px;
+ font-size: 18px;
+ padding-bottom: 5px;
+ display: inline-block;
+}
